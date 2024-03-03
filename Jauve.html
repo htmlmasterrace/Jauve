@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+            function update(x, y){
+                document.getElementById(x).innerHTML = (y);
+            }
+            function reset(x){
+                window.location.replace(x);
+            }
+        </script>
+        <style>
+            .levelbuild{
+                color: rgb(5, 53, 5);
+            }
+            body{
+                background-color: black;
+            }
+            .lvl{
+                font-size: xx-large;
+                font-family: monospace, ;
+                color: forestgreen;
+                background-color: black;
+            }
+            .flex { display : flex }
+            #title{
+                color: forestgreen;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+        </style>
+        <div id="roof">
+            <p class="levelbuild">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        </div>
+        <div id="game">
+            <br>
+            <h1 id="title">Jauve</h1>
+            <br>
+            <p id="title" onclick="reset('level1.html')">Play</p>
+            <br>
+            <p id="title" onclick="">Character</p>
+            <br>
+            <p id="title" onclick="">Settings</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="floor">
+            <p class="levelbuild">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        </div>
+        <br>
+        <br>
+        <div id="levelhealth">
+            <p class="lvl">Menu</p>
+            <button class="lvl" onclick="reset('Jauve.html')">Reset</button>
+        </div>
+    </body>
+</html>
